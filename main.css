@@ -1,0 +1,325 @@
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Volkhov:wght@400;700&display=swap");
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Volkhov", serif;
+}
+
+/* global */
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+/* Start Nav Section */
+.nav-logo img {
+    width: 100%;
+}
+
+nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    color:#181E4B ;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    letter-spacing: 1px;
+    transition: all 1.3s ease;
+}
+nav ul li a:hover{
+    color: rgb(12, 141, 33);
+}
+label #open-btn{
+    color: rgb(16, 197, 173);
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    display: none;
+}
+#nav-check{
+    display: none;
+}
+.sign-btn{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color:#000000  ;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.sign-btn:hover{
+    background-color: rgb(16, 170, 88);
+    border: none;
+    outline: none;
+    color: white;
+}
+/* End Nav Section */
+
+/* Start Intro Section */
+.intro-bg{
+    background-image: url('images/bg-img/Decore.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 600px 600px;
+}
+.intro-section{
+    display: flex;
+    align-items: center;
+    padding-top: 40px ;
+}
+.intro-small{
+    color: #181E4B;
+}
+.intro-text{
+    width: 50%;
+}
+.intro-text h2{
+    font-size: 75px;
+    color: #181E4B;
+    line-height: 75px;
+    margin: 7px 0;
+}
+.enjoy-bg{
+    position: relative;
+}
+.enjoy-bg::after{
+    content: url('images/bg-img/h2-underline.png');
+    width: 90%;
+    position: absolute;
+    left: 0;
+    top: 23%;
+    z-index: -1;
+}
+.intro-text p{
+    color: #181E4B;
+}
+.find-btn{
+    margin-top: 15px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 15px;
+    color: #181E4B;
+    background-color: orange;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+.find-btn:hover{
+    color: white;
+    background-color: rgb(9, 104, 110);
+}
+.intro-img img{
+    width: 100%;
+    height: auto;
+}
+/* End Intro Section */
+
+ /* Start Category Section  */
+ .category-bg {
+     background-image: url('images/bg-img/bg-decor-1.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 150px 150px;
+ }
+.category-section{
+    margin-top: 90px;
+    text-align: center;
+}
+.section-intro h1{
+    color: #181E4B;
+    font-size: 50px;
+}
+.section-intro p{
+    color: #181E4B;
+    font-size: 20px;
+}
+.category{
+    display: flex;
+    align-items: center;
+}
+.single-category {
+    cursor: pointer;
+    padding: 45px;
+    margin: 16px 10px;
+    border-radius: 36px;
+    width: 250px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.02);
+    transition: all ease-in-out 0.5s;
+  }
+  .single-category:hover {
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.1);
+  }
+.single-category h3{
+    color: #181E4B; 
+    margin-top: 20px;
+}
+.single-category p{
+    color: #181E4B; 
+    margin-top: 10px;
+}
+.single-category img{
+   width: 100px;
+   height: 100px;
+}
+  /* End Category Section  */
+
+  /* Start Destination Section */
+  .destination-section{
+      margin-top: 90px;
+      text-align: center; 
+ }
+  .destination{
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+  }
+  .single-destination{
+      cursor: pointer;
+      margin: 10px 10px;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 100px 80px rgba(0, 0, 0, 0.06);
+  }
+  .single-destination img{
+      width: 100%;
+      height: 400px;
+      margin-bottom: 5px;
+  }
+  .single-destination p {
+    padding: 0 16px 10px;
+    color: #181E4B;
+  }
+
+  /* End Destination Section */
+
+  /* Start Partner Section */
+  .brands{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 60px;
+  }
+  .brand img {
+      width: 100%;
+  }
+  /* End Partner Section */
+
+  /* Start Subscribe Section */
+.subscribe-bg{
+    background-image: url('images/bg-img/bg-decor-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 100px 100px;
+}
+.subscribe-section{
+    margin-top: 50px;
+    text-align: center;
+}
+.subscribe{
+    background:rgb(9, 104, 110) no-repeat bottom left ;
+    padding: 80px;
+    border-radius: 20px;
+}
+.subscribe h2{
+    color: white;
+    width: 70%;
+    margin: auto;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.input-group{
+    margin-top: 15px;
+}
+.subscribe-input{
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #181E4B;
+}
+.subscribe-btn{
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    padding: 12px;
+    color: #181E4B;
+    background-color: orange;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+.subscribe-btn:hover{
+    background-color: blueviolet;
+    color: white;
+}
+  /* End Subscribe Section */
+
+  /* Start Footer Section */
+  .footer-section{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 100px 0;
+  }
+  .footer p {
+    margin-top: 10px;
+    color: #181E4B;
+    font-size: 17px;
+    
+  }
+  .copyright{
+      text-align: center;
+      color: #181E4B;
+      margin: 40px 0;
+      font-size: 17px;
+  }
+
+  .icons{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  .icon{
+    font-size: 30px;
+    padding: 0 13px;
+    color:rgb(179, 15, 91);
+    cursor: pointer;
+    transition: transform(all ease-in-out 1s);
+  }
+  .icon:hover{
+    color: rgb(16, 197, 173);
+    transform: scale(1.4);
+  }
+  /* End Footer Section */
