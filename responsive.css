@@ -1,50 +1,234 @@
 
-/* start at laptop version */
-@media screen and (max-width:1024px){
+/* Big laptop version */
+@media only screen and (max-width:1440px){
     .container{
         width: 80%;
         margin: 0 auto;
     }
 
 }
-
-/* start at tab version */
-@media screen and (max-width: 768px){
-    
-    .container{
-        width: 90%;
-        margin: 0 auto;
+/* For Tablet */
+@media only screen and (max-width: 1024px) {
+    /* Global */
+    .container {
+      width: 90%;
+      margin: auto;
     }
-
-    nav ul {
+    .section-intro h1{
+        font-size: 35px;
+    }
+      /* Start Nav Section */
+      nav ul {
         position: fixed;
         top: 80px;
         left: -100%;
         background-color: black;
         height: 100%;
-        width: 90%;
+        width: 97%;
         flex-direction: column;
         text-align: center;
         transition: all 0.6s ease;
+       
     }
     nav ul li {
         margin: 15px 0;
     }
     nav ul li a{
         color: white;
-    }
-    nav ul li a :hover {
-       font-size: 15px;
+        font-size: 13px;
     }
     
     label #open-btn{
         display: block;
     }
     #nav-check:checked ~ ul{
-        left: 5%;
+        left: 2%;
     }
     #nav-check:checked ~ label #open-btn:before{
         content:"\f00d";
     }
-  
+    .sign-btn{
+        color: white;
+    }
+    /* end Nav Section */
+
+   /* start intro section */
+   .intro-section{
+    flex-direction: column-reverse;
+    }
+   .enjoy-bg::after{
+    width: 20%;
+   }
+   .intro-text h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin: 3px 0;
+   }
+   .intro-img img{
+    width: 80%;
+   } 
+   .intro-text{
+    margin-top: 30px;
+   }
+/* End Intro Section */
+
+/* start category section */
+    .category{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .category-bg {
+       background-size: 90px 90px;
+    }
+    /* end category section */
+
+    /* start destination section */
+    .destination{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .single-destination {
+      min-width: 400px;
+    }
+    /* end destination section */
+
+  /* Start Subscribe Section */
+    .subscribe-bg{
+    
+    background-size: 90px 90px;
+   }
+   .subscribe h2{  
+    width: 100%;
+   }
+ /* End Subscribe Section */
+
+/* Start Footer Section */
+    .footer-section{
+        flex-direction: column;   
+    }
+    .footer-logo{
+        margin-bottom: 12px;
+    }
+    .footer p {
+       margin-bottom: 10px;
+       font-size: 14px;
+     }
+    .copyright{
+       margin: 30px 0;
+       font-size: 14px;
+    }
+ 
+    .icons{
+      margin-top: 20px;
+    }
+    .icon{
+       font-size: 20px;
+       padding: 0 10px;
+    }
+    .icon:hover{
+       transform: scale(1.3);
+    } 
+ /* End Footer Section */
+}
+/* start at mobile version */
+@media only screen and (max-width: 600px){
+    
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .section-intro h1{
+        font-size: 30px;
+    }
+    
+   /* start intro section */
+   .intro-section{
+        flex-direction: column-reverse;
+    }
+    .enjoy-bg::after{
+        width: 20%;
+    }
+    .intro-text h2{
+        font-size: 40px;
+        line-height: 50px;
+        margin: 4px 0;
+    }
+    .intro-img img{
+        width: 80%;
+    }
+    .intro-text{
+        margin-top: 30px;
+    }
+    .find-btn{
+        margin-top: 10px;;
+        padding: 13px;
+        margin: 3px 0;
+    } 
+    /* End Intro Section */
+    
+    /* Start Destination Section */
+ 
+    .single-destination{
+       margin: 5px 5px;  
+    }
+   .single-destination img{
+      width: 80%;
+      height: 340px;
+   }
+   .single-destination p {
+      padding: 0 12px 12px;
+    }
+/* End Destination Section */
+
+ /* Start Partner Section */
+    .brand img{
+        width: 80px;
+    }
+/* End Partner Section */
+
+    /* Start subscribe Section */
+    .subscribe-bg{
+        background-size: 50px 50px;
+    }
+    .subscribe h2{
+        width: 100%;
+        letter-spacing: 0;
+        font-size: 20px;
+    }
+    .input-group{
+        margin-top: 20px;
+    }
+    .subscribe-input{
+        margin-bottom: 10px;
+    }
+    /* End subscribe Section */
+   
+}
+
+/* Mini mobile */
+@media only screen and (max-width: 450px){
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .enjoy-bg::after{
+        width: 10%;
+    }
+    /* Start subscribe Section */
+    .subscribe h2{
+        font-size: 10px;
+    }
+    .subscribe-input{
+        padding: 6px;
+        font-size: 10px;
+    }
+    .subscribe-btn{
+        padding: 10px;
+        font-size: 11px;
+    }
+    /* End subscribe Section */
+    .brands{
+        flex-direction: column;
+    }
+
 }

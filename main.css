@@ -45,8 +45,8 @@ nav ul {
 }
 nav ul li a {
     color:#181E4B ;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
     padding: 10px;
     letter-spacing: 1px;
     transition: all 1.3s ease;
@@ -102,7 +102,7 @@ label #open-btn{
     width: 50%;
 }
 .intro-text h2{
-    font-size: 75px;
+    font-size: 65px;
     color: #181E4B;
     line-height: 75px;
     margin: 7px 0;
@@ -150,9 +150,9 @@ label #open-btn{
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 150px 150px;
+    margin-top: 90px;
  }
 .category-section{
-    margin-top: 90px;
     text-align: center;
 }
 .section-intro h1{
@@ -214,12 +214,12 @@ label #open-btn{
       width: 100%;
       height: 400px;
       margin-bottom: 5px;
+      object-fit: cover;
   }
   .single-destination p {
     padding: 0 16px 10px;
     color: #181E4B;
   }
-
   /* End Destination Section */
 
   /* Start Partner Section */
