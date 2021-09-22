@@ -1,4 +1,4 @@
-### Project Name- _ Responsive Landing Travel Agency_
+### Project Name- _Responsive Landing Travel Agency_
 
 ``` Project Details ```
 - Full Responsive Landing Page .
@@ -6,7 +6,7 @@
 - html5 & css3 uses .
 
 _Web-Site Live Link_
-[click here](http://192.168.31.172:5500/index.html)
+[click here](file:///D:/complet-web-developer---2/All-Projects/Travel-Agency-Landing-Page/index.html)
 
 _image_
 ![Landing-Page](images/res/travel.png)
