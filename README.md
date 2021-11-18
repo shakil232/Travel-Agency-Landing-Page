@@ -8,7 +8,9 @@
 ### _Web-Site Live Link_
 [click here](http://192.168.0.103:5500/index.html)
 
-_image_
-![Landing-Page](images/res/travel.png)
+_ALL Device Responsive image_
+![Landing-Page](images/markdwon/travel-agency-responsive.png)
+_Full-Screenshot image_
+![Landing-Page](images/markdwon/travel-agency-full-scnst.png)
 
 ---
